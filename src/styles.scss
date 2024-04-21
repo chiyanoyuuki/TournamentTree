@@ -1,1 +1,90 @@
-/* You can add global styles to this file, and also import other style files */
+html
+{
+    background-color:#202020;
+}
+*
+{
+    color: #808080;
+}
+.conteneur
+{
+    display:flex;
+    background-color:#151515;
+    border:5px ridge #808080;
+    padding:20px;  
+    border-radius: 50px;
+    box-shadow: 10px 5px 5px black;
+}
+.title
+{
+    font-size:50px;
+    padding:25px;
+    background-color:#303030;
+    border:5px ridge #808080;
+    border-radius: 50px;
+    box-shadow: 10px 5px 5px black;
+    text-shadow: 5px 5px #000;
+}
+.tinytitle
+{
+    text-align: center;
+    color:#aaa;
+}
+.activite
+{
+    display:flex;
+}
+.activite img
+{
+    border:2px solid black;
+    width: 50px;
+    height:50px;
+    margin-right:10px;  
+    border-radius: 100%;
+}
+.activite:hover
+{
+    cursor:pointer;
+    opacity:0.5;
+}
+.disabled
+{
+    pointer-events: none;
+    opacity:0.3;
+}
+.round
+{  
+    background-color:#050505;
+    margin: 5px;
+    width:290px;
+    margin-bottom:20px;  
+    border-radius: 40px;
+}
+.lose img
+{
+    border-color:red!important;
+}
+.win img
+{
+    border-color:rgb(0, 255, 0)!important;
+}
+.lose
+{
+    opacity:0.2!important;
+}
+.win
+{
+    opacity:1!important;
+}
+.colonne
+{
+    width:90%;
+    max-height:500px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    background-color: #101010;
+}
+.topcol
+{
+    width:90%;
+}
