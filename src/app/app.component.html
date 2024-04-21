@@ -8,11 +8,11 @@
       <div *ngFor="let act of getAct(round);let i=index" class="round" ngClass="round{{r}}">
         <div class="groupe" [style.display]="nb>=max(r,i)?'unset':'none'" style="padding:0px 5px;left: 10px;position: relative;">
           <div style="margin-bottom:5px;" class="activite" (click)="win(0)" [class.win]="act[0].win" [class.lose]="act[0].lose" [class.disabled]="nb!=isDisabled(r,i)">
-            <img src="../assets/{{act[0].img?act[0].img+'.png':'qm.jpg'}}"/>
+            <img src="./assets/{{act[0].img?act[0].img+'.png':'qm.jpg'}}"/>
             <p>{{act[0].nom}}</p>
           </div>
           <div *ngIf="act[1]" class="activite"  (click)="win(1)" [class.win]="act[1].win" [class.lose]="act[1].lose" [class.disabled]="nb!=isDisabled(r,i)">
-            <img src="../assets/{{act[1].img?act[1].img+'.png':'qm.jpg'}}"/>
+            <img src="./assets/{{act[1].img?act[1].img+'.png':'qm.jpg'}}"/>
             <p>{{act[1].nom}}</p>
           </div>
         </div>
